@@ -32,9 +32,9 @@ var attemptToStayHidden = function(whoIsHiding, whoIsLookingout){
 
 var makingPlanTwo = function(spycams, binoculars) {
 	console.log(myFriend + " asks if it is true that we have spycams and " + me + " tells him that it is " + spycams + ".");
-	if (spycams = true, binoculars = true) 
+	if (spycams = true) 
 		console.log(me + " tells " + myFriend + " that he has a box of short range spycams.");
-	else if (spycams = false, binoculars = true)
+	else if (binoculars = true)
 		console.log(me + " tells " + myFriend + " that all he has is a pair of binoculars.");
 	useOfTool = "Since It is " + spycams + " that we have spycams we need to make a plan how to use what we have."
 	return useOfTool; 

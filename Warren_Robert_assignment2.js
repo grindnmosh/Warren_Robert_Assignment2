@@ -18,6 +18,7 @@ var me = "Robert",
 	hidden = true,
 	thieves = 'people working as a team',
 	numOfThieves = 5,
+	kids = ("Marcus, Rick, Chris, Michael, Brandon, Luke")
 	timePerLocker = [30, 30, 30, 60, 30, 60];
 
 
@@ -84,7 +85,7 @@ console.log(tooled); // bolean function
 map = useOfCameras(1),
 console.log(map); // number function
 
-known = whatWeKnow("Marcus, Rick, Chris, Michael, Brandon, Luke");
+known = whatWeKnow(kids);
 console.log(known); // string function
 
 watch = kidsLockersToWatch([timePerLocker]);

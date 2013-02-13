@@ -1,5 +1,3 @@
-Read Me:
-
 This is my Scalable Data Interfaces Assignment for week 2. 
 
 This is the second chapter in my detective story.

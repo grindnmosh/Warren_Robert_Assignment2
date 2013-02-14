@@ -7,6 +7,7 @@ Robert Warren
 Project 2
 Teen Super Sleuth
 Chapter 2 "The Plan"
+github: https://github.com/grindnmosh/Warren_Robert_Assignment2
 */
 
 var me = "Robert",
@@ -18,7 +19,7 @@ var me = "Robert",
 	hidden = true,
 	thieves = 'people working as a team',
 	numOfThieves = 5,
-	kidsHit = ("Michael, Brandon and Luke"),
+	kidsHit = ["Michael", "Brandon", "Luke"],
 	kidsRepeated =["Michael", "Luke"],
 	timePerLocker = [30, 30, 30, 60, 30, 60];
 
@@ -26,7 +27,7 @@ var me = "Robert",
 var attemptToStayHidden = function(whoIsHiding, whoIsLookingout){
 	if (whoIsHiding === "Robert", whoIsLookingOut = "Sam") {
 		console.log(whoIsHiding + " asks " + whoIsLookingOut + " to cover him as they plan what their second attempt consists of.");
-	} else { (whoIsHiding === "Sam", whoIsLookingOut = "Robert") 
+	} else if (whoIsHiding === "Sam", whoIsLookingOut = "Robert") {
 		console.log(whoIsHiding + " asks " + whoIsLookingOut + " to cover him as they plan what their second attempt consists of.");
 		};
 }; // procedure
@@ -35,7 +36,7 @@ var makingPlanTwo = function(spycams, binoculars) {
 	console.log(myFriend + " asks if it is true that we have spycams and " + me + " tells him that it is " + spycams + ".");
 	if (spycams === true) {
 		console.log(me + " tells " + myFriend + " that he has a box of short range spycams.");
-	} else { (binoculars === true)
+	} else if (binoculars === true) {
 		console.log(me + " tells " + myFriend + " that all he has is a pair of binoculars.");
 	};
 	useOfTool = spycams;
@@ -82,8 +83,9 @@ var needToWatch = ["Marcus", "Rick", "Chris", "Michael", "Brandon", "Luke"],
 	for (var i=0; i < lockernumbers.length; i++) {
 	console.log("We need to watch " + lockernumbers[i] + " belonging to " + needToWatch[i] + " for " + [timePerLocker[i]] + " minutes from behind the bleachers so that we are within range.");
 	};
-	watchPlan = 60;
-	return watchPlan; // array function
+	console.log('The locker that has been hit the most times is locker number  ' + lockernumbers.pop() + ' and belongs to ' + kidsRepeated.pop() + '.')
+	lockersToWatch = [216, 321, 136, 112, 245, 301];
+	return lockersToWatch; // array function
 }; 
 
 attemptToStayHidden(me, myFriend); // procedure
@@ -101,4 +103,7 @@ console.log(known); // string function
 
 watch = kidsLockersToWatch([timePerLocker], 60);
 console.log(watch); 
-console.log('we are using ' + watchPlan + ' minutes per camera.');//array function
+console.log('We are using 60 minutes per camera to watch locker numbers ' + lockersToWatch + '.');
+console.log('Though ' + kidsRepeated.pop() + ' is the kid that gets picked on the most.');
+console.log('I saw ' + kidsHit.push("Marcus") + ' kids with their cellphones today.')
+ //array function

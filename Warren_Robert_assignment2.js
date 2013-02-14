@@ -24,10 +24,10 @@ var me = "Robert",
 	timePerLocker = [30, 30, 30, 60, 30, 60];
 
 
-var attemptToStayHidden = function(whoIsHiding, whoIsLookingout){
-	if (whoIsHiding === "Robert", whoIsLookingOut = "Sam") {
+var attemptToStayHidden = function(whoIsHiding, whoIsLookingOut){
+	if (whoIsHiding === "Robert", whoIsLookingOut === "Sam") {
 		console.log(whoIsHiding + " asks " + whoIsLookingOut + " to cover him as they plan what their second attempt consists of.");
-	} else if (whoIsHiding === "Sam", whoIsLookingOut = "Robert") {
+	} else if (whoIsHiding === "Sam", whoIsLookingOut === "Robert") {
 		console.log(whoIsHiding + " asks " + whoIsLookingOut + " to cover him as they plan what their second attempt consists of.");
 		};
 }; // procedure
@@ -79,11 +79,11 @@ var needToWatch = ["Marcus", "Rick", "Chris", "Michael", "Brandon", "Luke"],
 	lockernumbers = [216, 321, 136, 112, 245, 301];
 	console.log("We will need to rotate where the camera's are recording.");
 	console.log("We will divide the camera time with 2 of the camera's watching  " + kidsRepeated + "'s lockers since they have been broken into multiple times already.");
-	console.log("and dive the other 2 cameras between the other 4 lockers for 30 minutes apiece.") ;
+	console.log("and dive the other 2 cameras between the other 4 lockers for 30 minutes apiece.");
 	for (var i=0; i < lockernumbers.length; i++) {
 	console.log("We need to watch " + lockernumbers[i] + " belonging to " + needToWatch[i] + " for " + [timePerLocker[i]] + " minutes from behind the bleachers so that we are within range.");
 	};
-	console.log('The locker that has been hit the most times is locker number  ' + lockernumbers.pop() + ' and belongs to ' + kidsRepeated.pop() + '.')
+	console.log('The locker that has been hit the most times is locker number  ' + lockernumbers.pop() + ' and belongs to ' + kidsRepeated.pop() + '.');
 	lockersToWatch = [216, 321, 136, 112, 245, 301];
 	return lockersToWatch; // array function
 }; 
@@ -105,5 +105,5 @@ watch = kidsLockersToWatch([timePerLocker], 60);
 console.log(watch); 
 console.log('We are using 60 minutes per camera to watch locker numbers ' + lockersToWatch + '.');
 console.log('Though ' + kidsRepeated.pop() + ' is the kid that gets picked on the most.');
-console.log('I saw ' + kidsHit.push("Marcus") + ' kids with their cellphones today.')
+console.log('I saw ' + kidsHit.push("Marcus") + ' kids with their cellphones today.');
  //array function
